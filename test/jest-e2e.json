@@ -1,0 +1,18 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^src/(.*)": "<rootDir>/../src/$1",
+    "@app/mongoose-hide-object-id/(.*)": "<rootDir>/../libs/mongoose-hide-object-id/src/$1",
+    "@app/mongoose-hide-object-id": "<rootDir>/../libs/mongoose-hide-object-id/src",
+    "@plugins/mongoose-hide-object-id/(.*)": "<rootDir>/../libs/mongoose-hide-object-id/src/$1",
+    "@plugins/mongoose-hide-object-id": "<rootDir>/../libs/mongoose-hide-object-id/src",
+    "@app/id-generator/(.*)": "<rootDir>/../libs/id-generator/src/$1",
+    "@app/id-generator": "<rootDir>/../libs/id-generator/src"
+  }
+}

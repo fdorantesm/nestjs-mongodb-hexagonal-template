@@ -1,0 +1,27 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "webpack": true
+  },
+  "projects": {
+    "mongoose-hide-object-id": {
+      "type": "library",
+      "root": "libs/mongoose-hide-object-id",
+      "entryFile": "index",
+      "sourceRoot": "libs/mongoose-hide-object-id/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/mongoose-hide-object-id/tsconfig.lib.json"
+      }
+    },
+    "id-generator": {
+      "type": "library",
+      "root": "libs/id-generator",
+      "entryFile": "index",
+      "sourceRoot": "libs/id-generator/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/id-generator/tsconfig.lib.json"
+      }
+    }
+  }
+}

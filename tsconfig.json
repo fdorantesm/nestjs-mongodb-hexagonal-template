@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "target": "esnext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/common": ["libs/common/src"],
+      "@app/common/*": ["libs/common/src/*"],
+      "@app/mongoose-hide-object-id": ["libs/mongoose-hide-object-id/src"],
+      "@app/mongoose-hide-object-id/*": ["libs/mongoose-hide-object-id/src/*"],
+      "@app/id-generator": ["libs/id-generator/src"],
+      "@app/id-generator/*": ["libs/id-generator/src/*"]
+    }
+  }
+}
