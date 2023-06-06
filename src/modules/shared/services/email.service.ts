@@ -6,7 +6,10 @@ import { EmailConfig } from '@thp/common/types/email/email.type';
 
 @Injectable()
 export class EmailService {
-  constructor(@InjectSES() private readonly ses: SES, private readonly configService: ConfigService) {}
+  constructor(
+    @InjectSES() private readonly ses: SES,
+    private readonly configService: ConfigService,
+  ) {}
 
   public async send(subject: string, to: string[], template: string) {
     const config = this.configService.get<EmailConfig>('email');
