@@ -1,0 +1,19 @@
+version = 1
+
+[[analyzers]]
+enabled = true
+name = "javascript"
+
+[[transformers]]
+enabled = true
+name = "prettier"
+
+test_patterns = [
+  "test/**/*",
+  "**/*.spec.ts"
+]
+
+exclude_patterns = [
+  "**/node_modules/",
+  "**/*memory*"
+]
