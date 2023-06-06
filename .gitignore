@@ -128,3 +128,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# MacOS
+.DS_Store
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Docker resources
+.mongodb
+.minio
