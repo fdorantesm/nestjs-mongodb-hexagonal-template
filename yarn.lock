@@ -2792,11 +2792,6 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@pluzchat/nestjs-ses@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pluzchat/nestjs-ses/-/nestjs-ses-1.0.2.tgz#bf3324963a328bacb11c48b9989d22ad362f96ca"
-  integrity sha512-F2qPW8XiAbhfniUcy0Egd51YjQ9Sl8r+CSKFbnDpwR1ArOirF+oKGk0bUxuMEt9yTFx3RcugSlzowJ62GGzZkg==
-
 "@seald-io/binary-search-tree@^1.0.2":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@seald-io/binary-search-tree/-/binary-search-tree-1.0.3.tgz#165a9a456eaa30d15885b25db83861bcce2c6a74"
@@ -8340,11 +8335,6 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
-
-slug@^8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/slug/-/slug-8.2.2.tgz#33b019a857a11fc4773c1e9a9f60e3da651a9e5d"
-  integrity sha512-5ByW6qXqPeG0Tmlkh24JhdXhvQsbaJSjVr3GgGxUV0BSskZKKBZZfFWxezap8+fh1vxBN9GVbqI1V6nqAFxlBg==
 
 slugify@^1.6.6:
   version "1.6.6"

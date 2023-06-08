@@ -13,6 +13,7 @@ import {
   PASSWORD_SERVICE_TOKEN,
   PasswordService,
 } from 'src/modules/users/domain/contracts/password.service.contract';
+import { Profile } from 'src/modules/users/domain/interfaces/profile.interface';
 
 @Injectable()
 export class UsersService {
@@ -34,7 +35,7 @@ export class UsersService {
     return this.userRepository.findOne(filter);
   }
 
-  public count(filter: Partial<User>): Promise<boolean> {
+  public count(filter: Partial<User>): Promise<number> {
     return this.userRepository.count(filter);
   }
 
@@ -68,7 +69,7 @@ export class UsersService {
     });
   }
 
-  public updateProfile(userId: string, data: Partial<ProfileEntity>) {
+  public updateProfile(userId: string, data: Partial<ProfileEntity>): Promise<Profile> {
     return this.userRepository.updateProfile(userId, data);
   }
 

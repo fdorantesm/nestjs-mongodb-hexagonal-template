@@ -6,7 +6,6 @@ import { UserEntity } from '../../../domain/entities/user.entity';
 import { UserModel } from '../models/user.model';
 import { User } from 'src/modules/users/domain/interfaces/user.interface';
 import { Profile } from 'src/modules/users/domain/interfaces/profile.interface';
-import { Scope } from 'src/modules/users/domain/enums/scope.enum';
 import { UserRepository } from 'src/modules/users/domain/contracts/user.repository.contract';
 
 @Injectable()
@@ -36,8 +35,8 @@ export class UserDatabaseRepository implements UserRepository {
     return undefined;
   }
 
-  public async count(filter: Partial<User>): Promise<boolean> {
-    return Boolean(await this.userModel.countDocuments(filter).exec());
+  public async count(filter: Partial<User>): Promise<number> {
+    return this.userModel.countDocuments(filter).exec();
   }
 
   public async getLoginData(email: string): Promise<UserEntity> {
@@ -79,7 +78,7 @@ export class UserDatabaseRepository implements UserRepository {
     return undefined;
   }
 
-  public async updateProfile(userId: string, profile: Partial<Profile>) {
+  public async updateProfile(userId: string, profile: Partial<Profile>): Promise<Profile> {
     const profileData = {};
 
     Object.keys(profile).forEach((field) => {
