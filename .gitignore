@@ -129,6 +129,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# MacOS
+.DS_Store
+
 # Env files
 .env
 .env.*
@@ -136,3 +139,4 @@ dist
 
 # Docker resources
 .mongodb
+.minio
