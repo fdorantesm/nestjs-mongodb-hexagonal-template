@@ -2,7 +2,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Module } from '@nestjs/common';
 
 import { UserModelInstance } from './infrastructure/database/models';
-import { UserDatabaseRepository } from './infrastructure/database/repositories/user.repository';
+import { UserDatabaseRepository } from './infrastructure/database/repositories/user.database.repository';
 import { UsersService } from './infrastructure/database/services/users.service';
 import { BcryptService } from './infrastructure/vendors/services/bcrypt.service';
 import { CommandHandlers } from './domain/commands';

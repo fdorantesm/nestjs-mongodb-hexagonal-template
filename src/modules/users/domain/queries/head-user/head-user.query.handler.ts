@@ -10,7 +10,8 @@ export class HeadUserQueryHandler implements IQueryHandler<HeadUserQuery> {
     @Inject(USER_SERVICE_TOKEN)
     private readonly usersService: UsersService,
   ) {}
-  public execute(command: HeadUserQuery): Promise<boolean> {
-    return this.usersService.count(command.filter);
+  public async execute(command: HeadUserQuery): Promise<boolean> {
+    const count = await this.usersService.count(command.filter);
+    return Boolean(count)
   }
 }
