@@ -12,6 +12,6 @@ export class HeadUserQueryHandler implements IQueryHandler<HeadUserQuery> {
   ) {}
   public async execute(command: HeadUserQuery): Promise<boolean> {
     const count = await this.usersService.count(command.filter);
-    return Boolean(count)
+    return Boolean(count);
   }
 }
