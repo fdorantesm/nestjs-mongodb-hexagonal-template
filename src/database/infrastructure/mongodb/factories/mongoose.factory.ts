@@ -10,7 +10,7 @@ mongoose.set('debug', false);
 
 @Injectable()
 export class MongooseFactory implements MongooseOptionsFactory {
-  protected config: MongooseModuleOptions;
+  protected config: DatabaseConnection;
 
   constructor(private readonly configService: ConfigService) {
     this.config = configService.get<DatabaseConnection>('database');
@@ -29,7 +29,6 @@ export class MongooseFactory implements MongooseOptionsFactory {
     return {
       uri,
       dbName: this.config.database,
-      useNewUrlParser: true,
       connectionFactory: createForInstance,
     };
   }
